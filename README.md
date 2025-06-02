@@ -1,3 +1,80 @@
+# DaredevTech AWS Learning Platform
+
+A modern, interactive learning platform designed to help developers prepare for the **AWS Developer Associate Certification** by building hands-on projects.
+
+Live at: [learn.daredevtech.com](https://learn.daredevtech.com)
+
+---
+
+## 🎯 Goal
+
+This project gamifies the AWS learning experience. Each AWS service is taught through:
+
+- A **visual slideshow introduction**
+- An **interactive module** or simulation (like IAM sandbox)
+- Code walkthroughs and best practices
+- Real project examples to reinforce concepts
+
+The goal is to make AWS approachable, visual, and fun.
+
+---
+
+## 🧠 Who It's For
+
+- Developers studying for the AWS Developer Associate Certification
+- Educators who want to showcase AWS services interactively
+- Contributors interested in devtools, cloud education, and frontend/backend integration
+
+---
+
+## 🌐 Architecture
+
+- **Frontend**: Built with [Next.js](https://nextjs.org/) using the App Router and Tailwind CSS
+- **Auth**: [Amazon Cognito](https://aws.amazon.com/cognito/) (user onboarding and profile saving)
+- **Design System**: Dark-themed UI with custom iconography and slide-based education flow
+
+---
+
+## 📁 Folder Structure
+
+```bash
+daredevtech-learning-platform/
+│
+├── public/                     # Static assets (images, logos, icons)
+│   └── assets/                 # Custom illustrations (laptop, cube, etc.)
+│
+├── src/
+│   ├── app/                    # App Router structure
+│   │   ├── page.tsx           # Homepage (overview of modules)
+│   │   ├── layout.tsx         # Global layout wrapper
+│   │   └── iam/               # IAM-specific learning path
+│   │       ├── page.tsx       # IAM base module page
+│   │       ├── slideshow.tsx  # IAM intro slideshow
+│   │       └── sandbox.tsx    # Interactive drag-and-drop IAM builder
+│   │
+│   ├── components/            # Reusable UI components
+│   │   ├── Navbar.tsx
+│   │   ├── Button.tsx
+│   │   ├── Slide.tsx
+│   │   └── SandboxCanvas.tsx
+│   │
+│   ├── lib/                   # Logic utilities
+│   │   └── simulatePolicy.ts  # Example: IAM policy simulator logic
+│   │
+│   ├── styles/                # Tailwind + global styles
+│   │   └── globals.css
+│   │
+│   └── types/                 # Shared TypeScript types
+│       └── iam.ts
+│
+├── tailwind.config.ts         # Tailwind theme config (Daredev brand colors)
+├── postcss.config.js
+├── tsconfig.json
+└── package.json
+
+
+** DEFAULT NOTES **
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
