@@ -6,8 +6,8 @@ export default function HomePage() {
     <main className="min-h-screen bg-[#0A0E17] text-white px-6 py-8 font-sans relative">
       {/* Header */}
       <header className="flex justify-between items-center border-b border-white/10 pb-4 mb-6">
-        <h1 className="text-sm text-orange-400 tracking-wide uppercase">learn.daredevtech.com</h1>
-        <Link href="https://daredevtech.com" className="text-sm text-blue-400 underline hover:text-blue-300">
+        <h1 className="text-sm text-orange-400 tracking-wide uppercase">learn.daredeviot.com</h1>
+        <Link href="https://daredeviot.com" className="text-sm text-blue-400 underline hover:text-blue-300">
           Back to Main Site ↗
         </Link>
       </header>
